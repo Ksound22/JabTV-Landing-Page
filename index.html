@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
     <title>JabTV Landing Page</title>
   </head>
   <body>
     <nav>
-      <div class="logo">
+      <a href="#" class="logo">
         <h1>
           <span class="jab">Jab</span><span class="tv">TV</span
           ><span class="fist">&#x1F44A;</span>
         </h1>
-      </div>
-      <ul class="menu-items">
-        <a href="#about"><li>About</li></a>
-        <a href="#contact"><li>Contact</li></a>
-        <a href="#ssubscribe"><li>Subscribe</li></a>
+      </a>
+      <ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">stakeholders</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Subscribe</a>
+        </li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
 
     <section class="hero">
       <div class="intro-text">
         <h1>
-          You can Hear the Jabs <br />
-          Connecting
+          <span class="hear"> You can Hear the Jabs </span> <br />
+          <span class="connecting"> Connecting</span>
         </h1>
         <p>
           An online streaming platform for boxing matches. <br />
@@ -64,58 +76,67 @@
     </section>
     <section class="stars">
       <div class="stars-gallery">
-        <a href="assets/images//boda--femi.jpg"
-          ><img src="assets/images//boda--femi.jpg" alt="Anthony Joshua"
+        <a href="assets/images/boda--femi.jpg" class="big"
+          ><img src="assets/images/boda--femi.jpg" alt="Anthony Joshua"
         /></a>
 
-        <a href="assets/images/tyson-fury.jpg"
+        <a href="assets/images/tyson-fury.jpg" class="big"
           ><img src="assets/images/tyson-fury.jpg" alt="Tyson Fury"
         /></a>
-        <a href="assets/images/iron-mike.webp.jpgss"
+        <a href="assets/images/iron-mike.webp.jpg" class="big"
           ><img src="assets/images/iron-mike.webp.jpg" alt="Iron Mike"
         /></a>
 
-        <a href="assets/images/ali.jpg"
+        <a href="assets/images/ali.jpg" class="big"
           ><img src="assets/images/ali.jpg" alt="Mohammed Ali"
         /></a>
-        <a href="assets/images/wilder.jpg"
+        <a href="assets/images/wilder.jpg" class="big"
           ><img src="assets/images/wilder.jpg" alt="Bronze Bomber"
         /></a>
-        <a href="assets/images/big-george.jpg"
+        <a href="assets/images/big-george.jpg" class="big"
           ><img src="assets/images/big-george.jpg" alt="Big George Foreman"
         /></a>
       </div>
     </section>
 
     <section class="stakeholders">
-      <h3>The Stakeholders</h3>
       <div class="persons">
         <div class="person-1">
           <img src="assets/images/john.jpg" alt="John Doe" />
-          <p>John Doe</p>
-          <small>Founder</small>
+          <p class="name">John Doe</p>
+          <p class="role">Founder</p>
         </div>
         <div class="person-2">
           <img src="assets/images/jane.jpg" alt="Jane Doe" />
-          <p>Jane Doe</p>
-          <small>MD</small>
+          <p class="name">Jane Doe</p>
+          <p class="role">MD</p>
         </div>
         <div class="person-3">
           <img src="assets/images/jnr.jpg" alt="John Doe Jnr" />
-          <p>John Doe JNR</p>
-          <small>Head Analyst</small>
+          <p class="name">John Doe JNR</p>
+          <p class="role">Head Analyst</p>
         </div>
       </div>
     </section>
 
     <section class="sub">
-      <h4>Subscribe to our newletter to get updates</h4>
+      <h3>Subscribe to our newletter to get updates</h3>
     </section>
+
+    <ion-icon name="arrow-up-circle-outline"></ion-icon>
 
     <footer>&copy; 2020. All Rights Reserverd</footer>
 
-    <script src="assets/js/simple-lightbox.min.js"></script>
-
     <script src="assets/js/app.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      var lightbox = new SimpleLightbox(".stars-gallery a");
+    </script>
   </body>
 </html>
