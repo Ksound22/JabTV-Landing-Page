@@ -29,3 +29,11 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Theme switcher
+const checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener("change", () => {
+  // Change website theme
+  document.body.classList.toggle("dark");
+});
