@@ -35,6 +35,6 @@ scrollUp.addEventListener("click", () => {
 
 // Theme switcher functionality
 checkbox.addEventListener("change", () => {
-  // Change website theme
+  // Toggle website theme
   document.body.classList.toggle("dark");
 });
