@@ -9,6 +9,9 @@ const scrollUp = document.querySelector("#scroll-up");
 // Hamburger menu functionality
 hamburger.addEventListener("click", openMenu);
 
+// Theme switcher selection
+const checkbox = document.querySelector("#checkbox");
+
 function openMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -30,9 +33,7 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-// Theme switcher
-const checkbox = document.querySelector("#checkbox");
-
+// Theme switcher functionality
 checkbox.addEventListener("change", () => {
   // Change website theme
   document.body.classList.toggle("dark");

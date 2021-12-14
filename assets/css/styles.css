@@ -1,21 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+/* CSS Variables */
 :root {
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 900;
-  --bg-white: #f1f1f1;
   --primary-color: #0652dd;
   --secondary-color: #ea2027;
   --line-height: 1.7rem;
   --transition: 0.4s ease-in;
 }
 
-/* Dark theme */
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+/* Dark theme starts*/
 body.dark {
   background-color: #1e272e;
-  transition: var(--transition);
+}
+
+body.dark .bar {
+  background-color: #fff;
 }
 
 body.dark p {
@@ -27,8 +42,12 @@ body.dark h3 {
 }
 
 body.dark nav {
-  background: #1e272e;
+  background-color: #1e272e;
   box-shadow: 2px 3px 2px #111010;
+}
+
+body.dark ul {
+  background-color: #1e272e;
 }
 
 body.dark .name {
@@ -44,15 +63,7 @@ body.dark footer {
   border-top: 1px solid #111010;
   box-shadow: 0px -2px 3px #111010;
 }
-
 /* Dark theme ends */
-
-/* Resets */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: "Roboto", sans-serf;
@@ -83,6 +94,7 @@ a:hover {
   color: var(--secondary-color);
 }
 
+/* Navbar starts */
 nav {
   background: #fff;
   position: sticky;
@@ -125,9 +137,9 @@ ul {
   width: 30px;
   height: 4px;
   margin: 6px auto;
-  transition: var(--transition);
 }
 
+/* Dark theme */
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -153,7 +165,6 @@ ul {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  transition: var(--transition);
 }
 
 .checkbox:checked + .label .switcher {
@@ -167,7 +178,10 @@ ul {
 .sun {
   color: #ff4757;
 }
+/* Dark theme ends */
+/* Navbar ends */
 
+/* Hero section starts */
 .hero {
   display: flex;
   align-items: center;
@@ -186,6 +200,10 @@ ul {
   margin-bottom: 0.5rem;
 }
 
+.hero p {
+  line-height: var(--line-height);
+}
+
 .hear {
   color: var(--primary-color);
 }
@@ -202,7 +220,6 @@ ul {
   font-size: 1.4rem;
   border-radius: 5px;
   color: #fff;
-  transition: var(--transition);
 }
 
 .red {
@@ -223,7 +240,9 @@ ul {
   background-color: #095cf7;
   color: #fff;
 }
+/* Hero section ends */
 
+/* About section start*/
 .about {
   position: relative;
   background: url("../images/jab.jpg") no-repeat top center/cover;
@@ -276,7 +295,9 @@ iframe {
   flex-direction: column;
   gap: 1.5rem;
 }
+/* About section ends */
 
+/* Image gallery starts */
 .stars-gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -294,7 +315,9 @@ iframe {
   width: 100%;
   height: 100%;
 }
+/* Image gallery ends */
 
+/* Stakeholders start */
 .people {
   margin-top: 2rem;
   padding: 1rem 0;
@@ -325,11 +348,13 @@ iframe {
   text-align: center;
   font-size: 0.8rem;
 }
+/* Stakeholders ends */
 
 .sub h3 {
   text-align: center;
 }
 
+/* Scroll to top button starts */
 .scroll-up {
   position: fixed;
   right: 0.5%;
@@ -341,7 +366,9 @@ iframe {
   width: 3rem;
   height: 3rem;
 }
+/* Scroll to top button ends */
 
+/* Subscription form starts */
 form {
   display: flex;
   align-items: center;
@@ -369,13 +396,14 @@ form {
   margin: 0 0.5rem;
   border: none;
   border-radius: 2px;
-  transition: var(--transition);
 }
 
 .submit-btn:hover {
   background-color: #095cf7;
 }
+/* Subscription form ends */
 
+/* Social icons */
 .social {
   text-align: center;
   margin: 2rem;
@@ -385,6 +413,7 @@ form {
   font-size: 1.3rem;
 }
 
+/* Footer */
 footer {
   border-top: 1px solid #f1f1f1;
   box-shadow: 0px -2px 3px #f1f1f1;
@@ -404,7 +433,6 @@ footer {
     top: 5rem;
     width: 100%;
     text-align: center;
-    transition: var(--transition);
   }
 
   ul.active {
@@ -463,5 +491,26 @@ footer {
 
   .persons {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero {
+    max-width: 345px;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  iframe {
+    max-width: 345px;
+  }
+
+  .stand-1 {
+    left: 140px;
+  }
+  .stand-2 {
+    left: 195px;
   }
 }

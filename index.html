@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Web page CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Simple lightbox CSS -->
     <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+
     <title>JabTV Landing Page</title>
   </head>
   <body>
@@ -17,6 +22,7 @@
         </h1>
       </a>
 
+      <!-- Dark/light theme switcher -->
       <div class="theme-switch">
         <input type="checkbox" class="checkbox" id="checkbox" />
         <label for="checkbox" class="label">
@@ -28,16 +34,16 @@
 
       <ul>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">stakeholders</a>
+          <a href="#stars" class="nav-link">Boxing Stars</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Subscribe</a>
+          <a href="#stakeholders" class="nav-link">stakeholders</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#sub" class="nav-link">Subscribe</a>
         </li>
       </ul>
 
@@ -48,6 +54,7 @@
       </div>
     </nav>
 
+    <!-- Hero section -->
     <section class="hero">
       <div class="intro-text">
         <h1>
@@ -55,7 +62,7 @@
           <span class="connecting"> Connecting</span>
         </h1>
         <p>
-          An online streaming platform for boxing matches. <br />
+          An online streaming platform for boxing matches <br />
           We also dedicate some special time to throwbacks cuz old is gold
         </p>
         <a class="btn red" href="#">Learn More</a>
@@ -75,7 +82,8 @@
       </div>
     </section>
 
-    <section class="about">
+    <!-- About section -->
+    <section class="about" id="about">
       <h3>Watch the Jabs</h3>
       <p>
         Our primary objective is to bring live boxing matches to fans all around
@@ -88,7 +96,7 @@
         boxers, news, and more.
       </p>
     </section>
-    <section class="stars">
+    <section class="stars" id="stars">
       <div class="stars-gallery">
         <a href="assets/images/boda--femi.jpg" class="big"
           ><img src="assets/images/boda--femi.jpg" alt="Anthony Joshua"
@@ -113,7 +121,8 @@
       </div>
     </section>
 
-    <section class="people">
+    <!-- Jab TV Stakeholders -->
+    <section class="people" id="stakeholders">
       <div class="stakeholders">
         <div class="persons">
           <div class="person-1">
@@ -135,7 +144,8 @@
       </div>
     </section>
 
-    <section class="sub">
+    <!-- Email subscription -->
+    <section class="sub" id="sub">
       <h3>Subscribe to our newletter to get updates</h3>
       <form action="">
         <input type="email" name="email" id="email-sub" class="email-sub" />
@@ -148,6 +158,7 @@
       </form>
     </section>
 
+    <!-- Social icons -->
     <section class="social">
       <h3>Connect with us on Social Media</h3>
       <div class="socicons">
@@ -159,6 +170,7 @@
 
     <footer>&copy;2020. All Rights Reserverd</footer>
 
+    <!-- Scroll to top button -->
     <i class="scroll-up" id="scroll-up"
       ><img
         src="assets/icons/icons8-upward-arrow.png"
@@ -166,13 +178,16 @@
         alt="up-arrow"
     /></i>
 
+    <!-- Web page script -->
     <script src="assets/js/app.js"></script>
 
+    <!-- Ion icons CDN -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
 
+    <!-- Simple lightbox -->
     <script src="assets/js/simple-lightbox.min.js"></script>
     <script>
       var lightbox = new SimpleLightbox(".stars-gallery a");
