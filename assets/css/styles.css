@@ -382,6 +382,8 @@ form {
 
 .email-sub {
   padding: 0.2rem;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
 }
 
 .email-sub:focus {
