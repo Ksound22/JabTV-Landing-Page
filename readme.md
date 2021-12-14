@@ -10,7 +10,7 @@ A landing page website template for campers. Made with the love of boxing at hea
 
 ## Github repo
 
-This is the [link](https://github.com/Ksound22/developer-portfolio) to the Github repo of the project
+This is the [link](https://github.com/Ksound22/JabTV-Landing-Page) to the Github repo of the project
 
 ## Sample Website
 
@@ -26,7 +26,8 @@ Below are are list of tools used, and the precise things they were used for:
 
 - [Ion Icons](https://ionic.io/ionicons) for dark theme switcher icons
 - [Icon8](https://icons8.com/) for scroll-tot-top icon
-- [Roboto font](https://icons8.com/) for font family.
+- [Roboto font](https://icons8.com/) for font family
+- [Favicon IO](https://favicon.io/favicon-generator/) for favicons.
 
 ## Folder Structure
 
