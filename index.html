@@ -16,6 +16,16 @@
           ><span class="fist">&#x1F44A;</span>
         </h1>
       </a>
+
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
       <ul>
         <li class="nav-item">
           <a href="#" class="nav-link">About</a>
@@ -26,7 +36,11 @@
         <li class="nav-item">
           <a href="#" class="nav-link">Subscribe</a>
         </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
       </ul>
+
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -99,33 +113,58 @@
       </div>
     </section>
 
-    <section class="stakeholders">
-      <div class="persons">
-        <div class="person-1">
-          <img src="assets/images/john.jpg" alt="John Doe" />
-          <p class="name">John Doe</p>
-          <p class="role">Founder</p>
-        </div>
-        <div class="person-2">
-          <img src="assets/images/jane.jpg" alt="Jane Doe" />
-          <p class="name">Jane Doe</p>
-          <p class="role">MD</p>
-        </div>
-        <div class="person-3">
-          <img src="assets/images/jnr.jpg" alt="John Doe Jnr" />
-          <p class="name">John Doe JNR</p>
-          <p class="role">Head Analyst</p>
+    <section class="people">
+      <div class="stakeholders">
+        <div class="persons">
+          <div class="person-1">
+            <img src="assets/images/john.jpg" alt="John Doe" />
+            <p class="name">John Doe</p>
+            <p class="role">Founder</p>
+          </div>
+          <div class="person-2">
+            <img src="assets/images/jane.jpg" alt="Jane Doe" />
+            <p class="name">Jane Doe</p>
+            <p class="role">MD</p>
+          </div>
+          <div class="person-3">
+            <img src="assets/images/jnr.jpg" alt="John Doe Jnr" />
+            <p class="name">John Doe JNR</p>
+            <p class="role">Head Analyst</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="sub">
       <h3>Subscribe to our newletter to get updates</h3>
+      <form action="">
+        <input type="email" name="email" id="email-sub" class="email-sub" />
+        <input
+          type="submit"
+          value="Subscribe"
+          id="submit-btn"
+          class="submit-btn"
+        />
+      </form>
     </section>
 
-    <ion-icon name="arrow-up-circle-outline"></ion-icon>
+    <section class="social">
+      <h3>Connect with us on Social Media</h3>
+      <div class="socicons">
+        <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+      </div>
+    </section>
 
     <footer>&copy; 2020. All Rights Reserverd</footer>
+
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.png"
+        class="socicon up-arrow"
+        alt="up-arrow"
+    /></i>
 
     <script src="assets/js/app.js"></script>
 
