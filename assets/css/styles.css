@@ -516,4 +516,9 @@ footer {
   .stand-2 {
     left: 195px;
   }
+
+  .stakeholders {
+    margin: 0.2rem auto;
+    max-width: 330px;
+  }
 }
