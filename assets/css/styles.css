@@ -518,7 +518,11 @@ footer {
   }
 
   .stakeholders {
-    margin: 0.2rem auto;
+    margin: 0 auto;
     max-width: 330px;
+  }
+
+  .persons {
+    text-align: center;
   }
 }
