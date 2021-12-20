@@ -245,7 +245,7 @@ ul {
 /* About section start*/
 .about {
   position: relative;
-  background: url("../images/jab.jpg") no-repeat top center/cover;
+  background: url("../images/jab-transformed.png") no-repeat top center/cover;
   height: 600px;
   display: flex;
   align-items: center;
@@ -498,7 +498,7 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero {
-    max-width: 345px;
+    max-width: 330px;
   }
 
   .intro-text h1 {
@@ -506,7 +506,7 @@ footer {
   }
 
   iframe {
-    max-width: 345px;
+    max-width: 330px;
   }
 
   .stand-1 {
@@ -514,5 +514,9 @@ footer {
   }
   .stand-2 {
     left: 195px;
+  }
+
+  .stakeholders {
+    max-width: 330px;
   }
 }
