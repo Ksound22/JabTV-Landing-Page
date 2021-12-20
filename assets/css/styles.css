@@ -336,6 +336,7 @@ iframe {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  gap: 1rem;
 }
 
 .name {
