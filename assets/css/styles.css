@@ -295,6 +295,11 @@ iframe {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+.about h3,
+.about p {
+  text-shadow: 2px 2px 2px #333;
+}
 /* About section ends */
 
 /* Image gallery starts */
