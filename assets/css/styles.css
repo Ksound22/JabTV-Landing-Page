@@ -296,9 +296,13 @@ iframe {
   gap: 1.5rem;
 }
 
-.about h3,
+.about h3 {
+  text-shadow: 2px 2px 2px #333;
+}
+
 .about p {
   text-shadow: 2px 2px 2px #333;
+  font-size: 1.8rem;
 }
 /* About section ends */
 
