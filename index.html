@@ -53,21 +53,23 @@
 
       <ul>
         <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
+          <a href="#about" class="nav-link" id="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#stars" class="nav-link">Boxing Stars</a>
+          <a href="#stars" class="nav-link" id="nav-link">Boxing Stars</a>
         </li>
         <li class="nav-item">
-          <a href="#stakeholders" class="nav-link">stakeholders</a>
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >stakeholders</a
+          >
         </li>
         <li class="nav-item">
-          <a href="#sub" class="nav-link">Subscribe</a>
+          <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
         </li>
       </ul>
 
       <!-- Bars -->
-      <div class="hamburger">
+      <div class="hamburger" id="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -195,9 +197,15 @@
 
     <!-- Email subscription -->
     <section class="sub" id="sub">
-      <h3>Subscribe to our newletter for updates</h3>
-      <form action="">
-        <input type="email" name="email" id="email-sub" class="email-sub" />
+      <h3>Subscribe to our newsletter for updates</h3>
+      <form action="#">
+        <input
+          type="email"
+          name="email"
+          id="email-sub"
+          class="email-sub"
+          required
+        />
         <input
           type="submit"
           value="Subscribe"

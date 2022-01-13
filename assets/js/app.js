@@ -1,7 +1,7 @@
 // Hamburger menu selections
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("ul");
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll("#nav-link");
 
 // scroll-to-top selection
 const scrollUp = document.querySelector("#scroll-up");

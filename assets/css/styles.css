@@ -24,6 +24,23 @@ html {
   transition: var(--transition);
 }
 
+body {
+  font-family: "Roboto", sans-serf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
 /* Dark theme starts*/
 body.dark {
   background-color: #1e272e;
@@ -65,23 +82,7 @@ body.dark footer {
 }
 /* Dark theme ends */
 
-body {
-  font-family: "Roboto", sans-serf;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
+/* Navbar starts */
 .fist {
   color: var(--secondary-color);
 }
@@ -94,7 +95,6 @@ a:hover {
   color: var(--secondary-color);
 }
 
-/* Navbar starts */
 nav {
   background: #fff;
   position: sticky;
@@ -139,7 +139,7 @@ ul {
   margin: 6px auto;
 }
 
-/* Dark theme */
+/* Dark theme switcher*/
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -167,10 +167,6 @@ ul {
   border-radius: 50%;
 }
 
-.checkbox:checked + .label .switcher {
-  transform: translateX(24px);
-}
-
 .moon {
   color: #ffa502;
 }
@@ -178,7 +174,11 @@ ul {
 .sun {
   color: #ff4757;
 }
-/* Dark theme ends */
+
+.checkbox:checked + .label .switcher {
+  transform: translateX(24px);
+}
+/* Dark theme switcher ends */
 /* Navbar ends */
 
 /* Hero section starts */
@@ -240,26 +240,6 @@ ul {
   background-color: #095cf7;
   color: #fff;
 }
-/* Hero section ends */
-
-/* About section start*/
-.about {
-  position: relative;
-  background: url("../images/jab-transformed.png") no-repeat top center/cover;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about h3 {
-  font-size: 3em;
-  margin-bottom: -20px;
-}
-
-.about p {
-  font-size: 1.5em;
-}
 
 iframe {
   max-width: 30rem;
@@ -287,13 +267,28 @@ iframe {
   top: -105px;
   left: 255px;
 }
+/* Hero section ends */
 
+/* About section start*/
 .about {
-  margin: 2rem 0;
+  position: relative;
+  background: url("../images/jab-transformed.png") no-repeat top center/cover;
+  height: 600px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.about h3 {
+  font-size: 3em;
+  margin-bottom: -20px;
+}
+
+.about p {
+  font-size: 1.5em;
 }
 
 .about h3 {
@@ -311,6 +306,12 @@ iframe {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+
+.stars-gallery img,
+.stars-gallery a {
+  width: 100%;
+  height: 100%;
+}
 .stars-gallery a:first-child {
   grid-row: 1/3;
   grid-column: 1/3;
@@ -319,11 +320,6 @@ iframe {
   grid-column: 3/5;
 }
 
-.stars-gallery img,
-.stars-gallery a {
-  width: 100%;
-  height: 100%;
-}
 /* Image gallery ends */
 
 /* Stakeholders start */
@@ -358,47 +354,33 @@ iframe {
   text-align: center;
   font-size: 0.8rem;
 }
+
 /* Stakeholders ends */
+
+/* Subscription form starts */
+.sub {
+  margin-top: 2rem;
+  height: 10vh;
+}
 
 .sub h3 {
   text-align: center;
 }
 
-/* Scroll to top button starts */
-.scroll-up {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-.up-arrow {
-  width: 3rem;
-  height: 3rem;
-}
-/* Scroll to top button ends */
-
-/* Subscription form starts */
 form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin: 0.4rem 2rem;
-}
-
-.sub {
-  margin-top: 2rem;
 }
 
 .email-sub {
   padding: 0.2rem;
-  border-radius: 4px;
   border: 1px solid var(--primary-color);
+  border-radius: 4px;
 }
 
 .email-sub:focus {
-  outline: none;
   border: 1px solid var(--secondary-color);
+  outline: none;
 }
 
 .submit-btn {
@@ -408,6 +390,7 @@ form {
   margin: 0 0.5rem;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -433,10 +416,26 @@ footer {
   padding: 2rem;
 }
 
+/* Scroll to top button starts */
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+/* Scroll to top button ends */
+
 @media screen and (max-width: 768px) {
-  .logo {
-    font-size: 1.5rem;
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
+
   ul {
     background-color: #fff;
     flex-direction: column;
@@ -455,11 +454,6 @@ footer {
     margin: 2rem 0;
   }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -470,6 +464,10 @@ footer {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   .hero {
